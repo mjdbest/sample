@@ -31,8 +31,8 @@ public class Readlogs
 			    	System.out.println(r);
 				    return ;
 			    }  
-				b++;
-				System.out.println(b);
+				//b++;
+				//System.out.println(b);
 			}
 			System.out.println(bool);
 		}
