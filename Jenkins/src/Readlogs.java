@@ -20,18 +20,14 @@ public class Readlogs
 			int i;
 			while(br.readLine()!=null)
 			{
-				Pattern pattern = Pattern.compile(br.readLine()); 
+			    Pattern pattern = Pattern.compile(br.readLine()); 
 			    Matcher matcher = pattern.matcher("Results :");
-			    boolean found = false;  
 			    while (matcher.find()) 
 			    {  
-			    	System.out.println("++++++++++++++++++++++++");  
-			        found = true;  
+			    	System.out.println("++++++++++++++++++++++++");
 			    }  
-			    if(!found)
-			    {  
-			    	System.out.println("No match found.");  
-			    }  
+				b++;
+				System.out.println(b);
 			}
 		}
 		catch(Exception e)
