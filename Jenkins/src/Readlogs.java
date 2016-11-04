@@ -25,7 +25,7 @@ public class Readlogs
 			    Matcher matcher = pattern.matcher(br.readLine());
 			    while (matcher.find()) 
 			    {  
-			    	System.out.println(+++++++++++);
+			    	System.out.println("+++++++++++");
 				    return ;
 			    }  
 				b++;
