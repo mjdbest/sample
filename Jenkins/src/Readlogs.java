@@ -21,7 +21,7 @@ public class Readlogs
 			while(br.readLine()!=null)
 			{
 				Pattern pattern = Pattern.compile(br.readLine()); 
-			    Matcher matcher = pattern.matcher("Results");
+			    Matcher matcher = pattern.matcher("Results :");
 			    boolean found = false;  
 			    while (matcher.find()) 
 			    {  
