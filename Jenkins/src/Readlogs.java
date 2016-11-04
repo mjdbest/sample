@@ -25,9 +25,9 @@ public class Readlogs
 			    Matcher matcher = pattern.matcher(br.readLine());
 			    while (matcher.find()) 
 			    {  
-			    	System.out.println("++++++++++++++++++++++++");
+				    br.next();
+			    	System.out.println(br.readLine());
 				    return ;
-				   // bool=true;
 			    }  
 				b++;
 				System.out.println(b);
