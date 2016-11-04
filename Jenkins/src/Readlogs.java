@@ -19,7 +19,7 @@ public class Readlogs
 			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/Shipfar_Job/lastSuccessful/log"));
 			int i;
 			boolean bool=false;
-			String r=null;
+			String r="xyz";
 			while(br.readLine()!=null)
 			{
 			    Pattern pattern = Pattern.compile("Results"); 
