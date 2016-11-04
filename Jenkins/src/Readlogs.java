@@ -21,11 +21,11 @@ public class Readlogs
 			boolean bool=false;
 			while(br.readLine()!=null)
 			{
-			    Pattern pattern = Pattern.compile("Results :"); 
+			    Pattern pattern = Pattern.compile("Results"); 
 			    Matcher matcher = pattern.matcher(br.readLine());
 			    while (matcher.find()) 
 			    {  
-			    	System.out.println(br.readLine());
+			    	System.out.println(+++++++++++);
 				    return ;
 			    }  
 				b++;
