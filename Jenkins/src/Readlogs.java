@@ -26,7 +26,7 @@ public class Readlogs
 			    while (matcher.find()) 
 			    {  
 			    	System.out.println("++++++++++++++++++++++++");
-				    return 0;
+				    return ;
 				    bool=true;
 			    }  
 				b++;
