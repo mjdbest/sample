@@ -26,10 +26,10 @@ public class Readlogs
 			    Matcher matcher = pattern.matcher(br.readLine());
 			    while (matcher.find()) 
 			    {  
-			    	System.out.println("+++++++++++");
 				r=br.readLine();
 			    	System.out.println(r);
-				    return ;
+				System.out.println("+++++++++++");
+				return ;
 			    }  
 				//b++;
 				//System.out.println(b);
