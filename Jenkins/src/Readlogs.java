@@ -12,7 +12,7 @@ public class Readlogs
 {
 	public static void main(String args[])
 	{
-		int b;
+		int b=0;
 	//   Reader f1=new Reader("/var/lib/jenkins/jobs/Shipfar_Job/lastSuccessful/log");
 		try
 		{
