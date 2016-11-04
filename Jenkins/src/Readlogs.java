@@ -19,6 +19,7 @@ public class Readlogs
 			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/Shipfar_Job/lastSuccessful/log"));
 			int i;
 			boolean bool=false;
+			String r=null;
 			while(br.readLine()!=null)
 			{
 			    Pattern pattern = Pattern.compile("Results"); 
@@ -26,6 +27,8 @@ public class Readlogs
 			    while (matcher.find()) 
 			    {  
 			    	System.out.println("+++++++++++");
+				r=br.readLine();
+			    	System.out.println(r);
 				    return ;
 			    }  
 				b++;
