@@ -20,8 +20,8 @@ public class Readlogs
 			int i;
 			while(br.readLine()!=null)
 			{
-			    Pattern pattern = Pattern.compile(br.readLine()); 
-			    Matcher matcher = pattern.matcher("Results :");
+			    Pattern pattern = Pattern.compile("Results :"); 
+			    Matcher matcher = pattern.matcher(br.readLine());
 			    while (matcher.find()) 
 			    {  
 			    	System.out.println("++++++++++++++++++++++++");
