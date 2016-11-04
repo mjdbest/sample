@@ -27,7 +27,7 @@ public class Readlogs
 			    {  
 			    	System.out.println("++++++++++++++++++++++++");
 				    return ;
-				    bool=true;
+				   // bool=true;
 			    }  
 				b++;
 				System.out.println(b);
