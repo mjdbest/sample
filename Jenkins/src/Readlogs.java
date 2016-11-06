@@ -47,6 +47,7 @@ public class Readlogs
 			    	while (matcher.find()) 
 			    	{  
 				    bool=true;
+					System.out.println(bool);
 			    	}  
 				}
 			}
