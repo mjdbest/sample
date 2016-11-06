@@ -13,7 +13,6 @@ public class Readlogs
 	public static void main(String args[])
 	{
 		int b=0;
-	//   Reader f1=new Reader("/var/lib/jenkins/jobs/Shipfar_Job/lastSuccessful/log");
 		try
 		{
 			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/Shipfar_Job/lastSuccessful/log"));
@@ -24,7 +23,8 @@ public class Readlogs
 			{
 			    Pattern pattern = Pattern.compile("Results"); 
 			//    System.out.println(br.readLine());
-			    Matcher matcher = pattern.matcher(br.readLine());
+				r=br.readLine();
+				Matcher matcher = pattern.matcher(r);
 			    while (matcher.find()) 
 			    {  
 				    System.out.println(br.readLine());
@@ -36,7 +36,6 @@ public class Readlogs
 				//b++;
 				//System.out.println(b);    */
 			}
-			System.out.println(bool);
 		}
 		catch(Exception e)
 		{
