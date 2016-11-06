@@ -33,7 +33,7 @@ public class Readlogs
 				boolean bool=false;
 				while(br.readLine()!=null)
 				{
-			    	Pattern pattern = Pattern.compile("Tests run:"); 
+			    	Pattern pattern = Pattern.compile("Tests run: 1, Failures: 0, Errors: 0, Skipped: 1"); 
 				System.out.println(i+"    " +br.readLine());
 					i++;
 			    	Matcher matcher = pattern.matcher(br.readLine());
