@@ -50,7 +50,7 @@ public class Readlogs
 					System.out.println(bool);
 			    	}  
 				}
-				System.out.println(bool);
+				System.out.println("*****************************************************8");
 			}
 			catch(Exception e)
 			{
