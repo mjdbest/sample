@@ -44,7 +44,7 @@ public class Readlogs
 			    	while (matcher.find()) 
 			    	{  
 					System.out.println(line);
-					continue;
+					break x:
 			    	}  
 				}
 			}
@@ -55,6 +55,7 @@ public class Readlogs
 			/*	break;
 			case 2: return;
 			case 3: System.out.println("Enter valid input!");  */
+			x:
 		}
 	}
 }
