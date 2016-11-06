@@ -16,6 +16,7 @@ public class Readlogs
 		Scanner sc=new Scanner(System.in);
 		int b=0;
 		String line=null;
+		String abcd;
 		String job_name[]={"CRE_Job", "Score_Job", "Shipfar_Job", "Shiptrack_Job", "TaxEngine_Job"};
 	/*	System.out.println("What do you want to do ?");
 		System.out.println("1. Enter job name to read logs.");
@@ -38,9 +39,6 @@ public class Readlogs
 			    	Pattern pattern = Pattern.compile("Results"); 
 				//System.out.println(br.readLine());
 				line=br.readLine();
-					if(line==null)
-					System.out.println("AAAAA");
-				//System.out.println(line);
 			    	Matcher matcher = pattern.matcher(br.readLine());
 			    	if (bool==true)
 			    	{
@@ -51,11 +49,12 @@ public class Readlogs
 			    	while (matcher.find()) 
 			    	{  
 				    bool=true;System.out.println(line+"bbbbbbb");
-					if(line!=null)
+					if(line!="")
 					System.out.println("DCDCD");
+					abcd=line;
 			    	}  
 				}
-				System.out.println("******************************");
+				System.out.println(abcd+"  ******************************");
 			}
 			catch(Exception e)
 			{
