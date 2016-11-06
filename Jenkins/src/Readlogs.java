@@ -31,11 +31,9 @@ public class Readlogs
 			try
 			{
 				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[i]+"/lastSuccessful/log"));
-				boolean bool=false;
 				while((line=br.readLine())!=null)
 				{
 			    	Pattern pattern = Pattern.compile("Tests run:"); 
-				//System.out.println(line);
 			    	Matcher matcher = pattern.matcher(line);
 			    /*	if (bool==true)
 			    	{
@@ -45,11 +43,10 @@ public class Readlogs
 			    	}   */
 			    	while (matcher.find()) 
 			    	{  
-				    bool=true;
-				System.out.println(line);
+					System.out.println(line);
+					return;
 			    	}  
 				}
-				System.out.println("*****");
 			}
 			catch(Exception e)
 			{
