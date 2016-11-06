@@ -14,7 +14,6 @@ public class Readlogs
 	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
-		String job_name=null;	
 		int b=0;
 		String job_name[]={"CRE_Job", "Score_Job", "Shipfar_Job", "Shiptrack_Job", "TaxEngine_Job"};
 	/*	System.out.println("What do you want to do ?");
@@ -26,12 +25,11 @@ public class Readlogs
 				case 1 : System.out.print("Enter a valid job name.");
 				Scanner st=new Scanner(System.in);
 				job_name=st.next();    */
-		for(int i:job_name)
+		for(int i=0;job_name[i]!=null;i++)
 		{
 			try
 			{
 				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[i]+"/lastSuccessful/log"));
-				int i;
 				boolean bool=false;
 				String r=null;
 				while(br.readLine()!=null)
@@ -48,6 +46,7 @@ public class Readlogs
 			    	{  
 				    bool=true;
 			    	}  
+				}
 			}
 			catch(Exception e)
 			{
