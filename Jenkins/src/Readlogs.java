@@ -15,7 +15,7 @@ public class Readlogs
 	{
 		int i=0;
 		String line=null;
-		String job_name[]={"CRE_Job", "Score_Job", "Shipfar_Job", "Shiptrack_Job", "TaxEngine_Job"};
+		String job_name[]={"CRE_Job", "Score_Job", "Shipfar_Job", "Shiptrack_Job"};
 	/*	System.out.println("What do you want to do ?");
 		System.out.println("1. Enter job name to read logs.");
 		System.out.println("2. Exit.");
