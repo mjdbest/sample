@@ -43,7 +43,7 @@ public class Readlogs
 			    	if (bool==true)
 			    	{
 					System.out.println("+++++++++");				
-					System.out.println(line+"BBBBB");
+					System.out.println(line+"BBBBB"+abcd);
 					bool=false;
 					//return;
 			    	}
@@ -52,7 +52,7 @@ public class Readlogs
 				    bool=true;System.out.println(line+"bbbbbbb");
 					if(line!="")
 					System.out.println("DCDCD");
-					abcd=line;
+					abcd=line+"aua";
 			    	}  
 				}
 				System.out.println("  ******************************");
