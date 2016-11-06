@@ -25,8 +25,9 @@ public class Readlogs
 				case 1 : System.out.print("Enter a valid job name.");
 				Scanner st=new Scanner(System.in);
 				job_name=st.next();    */
-		x: for(i=0;job_name[i]!=null;i++)
+		for(i=0;job_name[i]!=null;i++)
 		{
+			bool=false;
 			System.out.println(job_name[i]);	
 			try
 			{
@@ -43,8 +44,9 @@ public class Readlogs
 			    	}   */
 			    	while (matcher.find()) 
 			    	{  
+					if(bool==false)
 					System.out.println(line);
-					break x;
+					bool=true;
 			    	}  
 				}
 			}
