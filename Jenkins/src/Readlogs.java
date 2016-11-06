@@ -34,14 +34,14 @@ public class Readlogs
 				boolean bool=false;
 				while((line=br.readLine())!=null)
 				{
-			    	Pattern pattern = Pattern.compile("Tests run: 1, Failures: 0, Errors: 0, Skipped: 1"); 
+			    	Pattern pattern = Pattern.compile("Tests run:"); 
 				System.out.println(line);
 					i++;
 			    	Matcher matcher = pattern.matcher(line);
 			    	if (bool==true)
 			    	{
 					bool=false;
-					System.out.println("*******************************************************");
+					//System.out.println("*******************************************************");
 					//return;
 			    	}
 			    	while (matcher.find()) 
