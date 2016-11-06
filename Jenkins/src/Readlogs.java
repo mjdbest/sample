@@ -26,10 +26,11 @@ public class Readlogs
 			    Matcher matcher = pattern.matcher(r);
 			    while (matcher.find()) 
 			    {  
-			        System.out.println(r);
+			      //  System.out.println(r);
 				System.out.println("+++++++++++");
 				return ;
 			    }  
+								System.out.println(".....");
 				//b++;
 				//System.out.println(b);    */
 			}
