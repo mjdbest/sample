@@ -30,7 +30,7 @@ public class Readlogs
 			System.out.println(job_name[0]);	
 			try
 			{
-				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[0]+"/lastSuccessful/log"));
+				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+"Shipfar_Job"+"/lastSuccessful/log"));
 				boolean bool=false;
 				String r=null;
 				while(br.readLine()!=null)
