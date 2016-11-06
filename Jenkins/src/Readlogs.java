@@ -42,7 +42,7 @@ public class Readlogs
 			    	{
 					System.out.println("+++++++++");				
 					System.out.println(br.readLine());
-					//return;
+					return;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
