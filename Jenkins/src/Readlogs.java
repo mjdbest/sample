@@ -39,7 +39,7 @@ public class Readlogs
 			    	Matcher matcher = pattern.matcher(br.readLine());
 			    	if (bool)
 			    	{
-			        	System.out.println(r);
+					System.out.println(r);
 					return;
 			    	}
 			    	while (matcher.find()) 
