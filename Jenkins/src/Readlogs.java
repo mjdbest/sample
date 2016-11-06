@@ -49,9 +49,10 @@ public class Readlogs
 					return;
 			    	}
 			    	while (matcher.find()) 
-			    	{  if(line==null)
-					System.out.println("DCDCD");
+			    	{  
 				    bool=true;System.out.println(line+"bbbbbbb");
+					if(line==null)
+					System.out.println("DCDCD");
 			    	}  
 				}
 				System.out.println("******************************");
