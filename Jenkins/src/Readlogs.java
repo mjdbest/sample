@@ -50,7 +50,7 @@ public class Readlogs
 					System.out.println(bool);
 			    	}  
 				}
-				System.out.prinltn(bool);
+				System.out.println(bool);
 			}
 			catch(Exception e)
 			{
