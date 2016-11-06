@@ -34,7 +34,7 @@ public class Readlogs
 				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+"Shipfar_Job"+"/lastSuccessful/log"));
 				boolean bool=false;
 				line=br.readLine();
-							System.out.println(line);
+							System.out.println(br.readLine());
 
 				while(br.readLine()!=null)
 				{
