@@ -13,7 +13,7 @@ public class Readlogs
 {
 	public static void main(String args[])
 	{
-				Scanner sc=new Scanner(System.in);
+		Scanner sc=new Scanner(System.in);
 		String job_name=null;	
 		int b=0;
 		System.out.println("What do you want to do ?");
@@ -23,8 +23,8 @@ public class Readlogs
 		switch(b)
 		{
 				case 1 : System.out.print("Enter a valid job name.");
-				sc=new Scanner(System.in);
-				job_name=sc.next();
+				Scanner st=new Scanner(System.in);
+				job_name=st.next();
 		try
 		{
 			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name+"/lastSuccessful/log"));
