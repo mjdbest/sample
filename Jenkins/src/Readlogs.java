@@ -25,7 +25,7 @@ public class Readlogs
 				case 1 : System.out.print("Enter a valid job name.");
 				Scanner st=new Scanner(System.in);
 				job_name=st.next();    */
-		for(i=0;job_name[i]!=null;i++)
+		x: for(i=0;job_name[i]!=null;i++)
 		{
 			System.out.println(job_name[i]);	
 			try
@@ -55,7 +55,6 @@ public class Readlogs
 			/*	break;
 			case 2: return;
 			case 3: System.out.println("Enter valid input!");  */
-			x:
 		}
 	}
 }
