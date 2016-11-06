@@ -13,10 +13,7 @@ public class Readlogs
 {
 	public static void main(String args[])
 	{
-		Scanner sc=new Scanner(System.in);
-		int b=0;
-		String line=null;
-		String abcd="a";
+		int i=0;
 		String job_name[]={"CRE_Job", "Score_Job", "Shipfar_Job", "Shiptrack_Job", "TaxEngine_Job"};
 	/*	System.out.println("What do you want to do ?");
 		System.out.println("1. Enter job name to read logs.");
@@ -37,7 +34,8 @@ public class Readlogs
 				while(br.readLine()!=null)
 				{
 			    	Pattern pattern = Pattern.compile("Tests run:"); 
-				System.out.println("aa "+br.readLine());
+				System.out.println(i+"    " +br.readLine());
+					i++;
 				line=br.readLine();
 			    	Matcher matcher = pattern.matcher(br.readLine());
 			    	if (bool==true)
