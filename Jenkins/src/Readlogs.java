@@ -30,7 +30,7 @@ public class Readlogs
 				r=br.readLine();
 			    	System.out.println(r);
 				System.out.println("+++++++++++");
-				return ;
+				//return ;
 			    }  
 				//b++;
 				//System.out.println(b);
