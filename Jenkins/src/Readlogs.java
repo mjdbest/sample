@@ -38,18 +38,19 @@ public class Readlogs
 			    	Pattern pattern = Pattern.compile("Results"); 
 				//System.out.println(br.readLine());
 				line=br.readLine();
-				System.out.println(line);
+				//System.out.println(line);
 			    	Matcher matcher = pattern.matcher(br.readLine());
 			    	if (bool==true)
 			    	{
 					System.out.println("+++++++++");				
 					System.out.println(br.readLine());
+					System.out.println(line);
 					return;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
 				    System.out.println(br.readLine());
-				    bool=true;
+				    bool=true;System.out.println(line);
 			    	}  
 				}
 				System.out.println("******************************");
