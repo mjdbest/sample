@@ -36,26 +36,21 @@ public class Readlogs
 				boolean bool=false;
 				while(br.readLine()!=null)
 				{
-			    	Pattern pattern = Pattern.compile("Results"); 
+			    	Pattern pattern = Pattern.compile("Tests"); 
 				System.out.println(br.readLine());
 				line=br.readLine();
 			    	Matcher matcher = pattern.matcher(br.readLine());
 			    	if (bool==true)
 			    	{
-					System.out.println("+++++++++");				
-					System.out.println(line+"BBBBB"+abcd);
 					bool=false;
-					//return;
+					return;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
-				    bool=true;System.out.println(line+"bbbbbbb");
-					if(line!="")
-					System.out.println("DCDCD");
-					abcd=line+"aua";
+				    bool=true;
 			    	}  
 				}
-				System.out.println("  ******************************");
+				System.out.println("*****");
 			}
 			catch(Exception e)
 			{
