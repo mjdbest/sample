@@ -22,17 +22,14 @@ public class Readlogs
 			while(br.readLine()!=null)
 			{
 			    Pattern pattern = Pattern.compile("Results"); 
-			    r=br.readLine();
-			    Matcher matcher = pattern.matcher(r);
+			//    r=br.readLine();
+			    Matcher matcher = pattern.matcher(br.readLine());
 			    while (matcher.find()) 
 			    {  
 			      //  System.out.println(r);
-				System.out.println("+++++++++++");
+			//	System.out.println("+++++++++++");
 				return ;
 			    }  
-								System.out.println(".....");
-				//b++;
-				//System.out.println(b);    */
 			}
 		}
 		catch(Exception e)
