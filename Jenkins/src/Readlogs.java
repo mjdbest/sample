@@ -27,7 +27,7 @@ public class Readlogs
 			System.out.println(r);
 			    while (matcher.find()) 
 			    {  
-			      System.out.println(br.readLine());
+			      System.out.print(br.readLine());
 				System.out.println("+++++++++++");
 			//	return ;
 			    }  
