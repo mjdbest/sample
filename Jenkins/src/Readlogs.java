@@ -56,6 +56,7 @@ public class Readlogs
 			/*	break;
 			case 2: return;
 			case 3: System.out.println("Enter valid input!");  */
+			System.out.println(i);
 		}
 	}
 }
