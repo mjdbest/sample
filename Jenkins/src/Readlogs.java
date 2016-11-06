@@ -27,6 +27,7 @@ public class Readlogs
 				job_name=st.next();    */
 		for(int i=0;job_name[i]!=null;i++)
 		{
+							System.out.println(job_name);	
 			System.out.println(i);
 			try
 			{
