@@ -39,10 +39,10 @@ public class Readlogs
 			    	r=br.readLine();
 										System.out.println(r);
 			    	Matcher matcher = pattern.matcher(br.readLine());
-			    	if (bool)
+			    	if (bool==true)
 			    	{
 					System.out.println(r);
-					continue;
+					return;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
