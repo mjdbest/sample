@@ -26,7 +26,7 @@ public class Readlogs
 				case 1 : System.out.print("Enter a valid job name.");
 				Scanner st=new Scanner(System.in);
 				job_name=st.next();    */
-		for(i=0;i<job_name.length();i++)
+		for(i=0;i<job_name.length;i++)
 		{
 			bool=false;
 			System.out.println(job_name[i]);	
