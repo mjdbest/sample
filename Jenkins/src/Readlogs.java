@@ -37,12 +37,14 @@ public class Readlogs
 				{
 			    	Pattern pattern = Pattern.compile("Tests"); 
 			    	r=br.readLine();
-			//	System.out.println(r);
+				System.out.println(r);
 			    	Matcher matcher = pattern.matcher(br.readLine());
 			    	if (bool==true)
 			    	{
 					System.out.println(r);
 										System.out.println("+++++++++");
+					
+					System.out.println(r);
 					return;
 			    	}
 			    	while (matcher.find()) 
