@@ -42,7 +42,7 @@ public class Readlogs
 			    	if (bool==true)
 			    	{
 					System.out.println(r);
-					//return;
+					return;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
