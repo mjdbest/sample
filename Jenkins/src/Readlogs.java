@@ -38,8 +38,8 @@ public class Readlogs
 				while(br.readLine()!=null)
 				{
 			    	Pattern pattern = Pattern.compile("Tests"); 
-				//System.out.println(line);
-				System.out.println(br.readLine());
+				System.out.println(line);
+				//System.out.println(br.readLine());
 			    	Matcher matcher = pattern.matcher(line);
 			    	if (bool==true)
 			    	{
