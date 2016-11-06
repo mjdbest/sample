@@ -44,7 +44,8 @@ public class Readlogs
 			    	{
 					System.out.println("+++++++++");				
 					System.out.println(line+"BBBBB");
-					return;
+					bool=false;
+					//return;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
