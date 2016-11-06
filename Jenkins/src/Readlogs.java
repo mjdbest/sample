@@ -22,16 +22,13 @@ public class Readlogs
 			while(br.readLine()!=null)
 			{
 			    Pattern pattern = Pattern.compile("Results"); 
-			//    System.out.println(br.readLine());
-				r=br.readLine();
-				Matcher matcher = pattern.matcher(r);
+			    r=br.readLine();
+			    Matcher matcher = pattern.matcher(r);
 			    while (matcher.find()) 
 			    {  
-				    System.out.println(br.readLine());
-				r=br.readLine();
-			    	System.out.println(r);
+			        System.out.println(r);
 				System.out.println("+++++++++++");
-				//return ;
+				return ;
 			    }  
 				//b++;
 				//System.out.println(b);    */
