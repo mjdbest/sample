@@ -51,7 +51,7 @@ public class Readlogs
 			    	while (matcher.find()) 
 			    	{  
 				    bool=true;System.out.println(line+"bbbbbbb");
-					if(line==null)
+					if(line!=null)
 					System.out.println("DCDCD");
 			    	}  
 				}
