@@ -15,6 +15,7 @@ public class Readlogs
 	{
 		Scanner sc=new Scanner(System.in);
 		int b=0;
+		String line;
 		String job_name[]={"CRE_Job", "Score_Job", "Shipfar_Job", "Shiptrack_Job", "TaxEngine_Job"};
 	/*	System.out.println("What do you want to do ?");
 		System.out.println("1. Enter job name to read logs.");
@@ -32,23 +33,23 @@ public class Readlogs
 			{
 				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+"Shipfar_Job"+"/lastSuccessful/log"));
 				boolean bool=false;
-				String r=null;
-				while(br.readLine()!=null)
+				line=br.readLine();
+				while(line!=null)
 				{
 			    	Pattern pattern = Pattern.compile("Tests"); 
-			    	r=br.readLine();
-				System.out.println(r);
-			    	Matcher matcher = pattern.matcher(br.readLine());
+				//System.out.println(line);
+			    	Matcher matcher = pattern.matcher(line);
 			    	if (bool==true)
 			    	{
-					System.out.println(r);
+					System.out.println(line);
 										System.out.println("+++++++++");
 					
-					System.out.println(r);
-					return;
+					System.out.println(line);
+					//return;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
+					System.out.println(line);
 				    bool=true;
 			    	}  
 				}
