@@ -24,12 +24,12 @@ public class Readlogs
 			    Pattern pattern = Pattern.compile("Results"); 
 			   r=br.readLine();
 			    Matcher matcher = pattern.matcher(br.readLine());
+				if (bool==true)
 			System.out.println(r);
 			    while (matcher.find()) 
 			    {  
-			  //    System.out.print(br.readLine());
 				System.out.println("+++++++++++");
-			//	return ;
+				    bool=true;
 			    }  
 			}
 		}
