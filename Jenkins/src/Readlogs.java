@@ -12,10 +12,21 @@ public class Readlogs
 {
 	public static void main(String args[])
 	{
+		String job_name=null;	
 		int b=0;
+		System.out.println("What do you want to do ?");
+		System.out.println("1. Enter job name to read logs.");
+		System.out.println("2. Exit.");
+		Scanner sc=new Scanner(System.in);
+		b=sc.nextInt();
+		switch(b)
+		{
+				case 1 : System.out.print("Enter a valid job name.");
+				sc=new Scanner(System.in);
+				job_name=sc.next();
 		try
 		{
-			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/Shipfar_Job/lastSuccessful/log"));
+			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name+"/lastSuccessful/log"));
 			int i;
 			boolean bool=false;
 			String r=null;
@@ -38,6 +49,11 @@ public class Readlogs
 		catch(Exception e)
 		{
 			e.printStackTrace();
+		}
+				break;
+			case 2: return;
+				break;
+			case 3: System.out.println("Enter valid input!");
 		}
 	}
 }
