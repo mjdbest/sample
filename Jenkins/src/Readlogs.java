@@ -44,7 +44,7 @@ public class Readlogs
 			    	while (matcher.find()) 
 			    	{  
 					System.out.println(line);
-					return;
+					continue;
 			    	}  
 				}
 			}
