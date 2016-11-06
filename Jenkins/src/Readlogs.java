@@ -43,14 +43,12 @@ public class Readlogs
 			    	if (bool==true)
 			    	{
 					System.out.println("+++++++++");				
-					System.out.println(br.readLine());
-					System.out.println(line);
+					System.out.println(line+"BBBBB");
 					return;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
-				    System.out.println(br.readLine());
-				    bool=true;System.out.println(line);
+				    bool=true;System.out.println(line+"bbbbbbb");
 			    	}  
 				}
 				System.out.println("******************************");
