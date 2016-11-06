@@ -16,7 +16,8 @@ public class Readlogs
 		Scanner sc=new Scanner(System.in);
 		String job_name=null;	
 		int b=0;
-		System.out.println("What do you want to do ?");
+		String job_name[]={"CRE_Job", "Score_Job", "Shipfar_Job", "Shiptrack_Job", "TaxEngine_Job"};
+	/*	System.out.println("What do you want to do ?");
 		System.out.println("1. Enter job name to read logs.");
 		System.out.println("2. Exit.");
 		b=sc.nextInt();
@@ -24,10 +25,12 @@ public class Readlogs
 		{
 				case 1 : System.out.print("Enter a valid job name.");
 				Scanner st=new Scanner(System.in);
-				job_name=st.next();
-		try
+				job_name=st.next();    */
+		for(i:job_name)
 		{
-			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name+"/lastSuccessful/log"));
+			try
+		{
+			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[i]+"/lastSuccessful/log"));
 			int i;
 			boolean bool=false;
 			String r=null;
