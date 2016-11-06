@@ -19,7 +19,6 @@ public class Readlogs
 			int i;
 			boolean bool=false;
 			String r="xyz";
-			System.out.println(r);
 			while(br.readLine()!=null)
 			{
 			    Pattern pattern = Pattern.compile("Results"); 
@@ -28,7 +27,7 @@ public class Readlogs
 			System.out.println(r);
 			    while (matcher.find()) 
 			    {  
-			      System.out.println(r);
+			      System.out.println(br.readLine());
 				System.out.println("+++++++++++");
 			//	return ;
 			    }  
