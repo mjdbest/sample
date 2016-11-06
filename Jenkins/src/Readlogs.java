@@ -55,7 +55,7 @@ public class Readlogs
 					abcd=line;
 			    	}  
 				}
-				System.out.println(abcd+"  ******************************");
+				System.out.println("  ******************************");
 			}
 			catch(Exception e)
 			{
