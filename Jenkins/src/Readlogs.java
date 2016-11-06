@@ -13,12 +13,12 @@ public class Readlogs
 {
 	public static void main(String args[])
 	{
+				Scanner sc=new Scanner(System.in);
 		String job_name=null;	
 		int b=0;
 		System.out.println("What do you want to do ?");
 		System.out.println("1. Enter job name to read logs.");
 		System.out.println("2. Exit.");
-		Scanner sc=new Scanner(System.in);
 		b=sc.nextInt();
 		switch(b)
 		{
