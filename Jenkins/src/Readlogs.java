@@ -30,7 +30,7 @@ public class Readlogs
 			System.out.println(job_name[0]);	
 			try
 			{
-				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+"Shipfar_Job"+"/lastSuccessful/log"));
+				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name+"/lastSuccessful/log"));
 				boolean bool=false;
 				while((line=br.readLine())!=null)
 				{
@@ -38,12 +38,12 @@ public class Readlogs
 				System.out.println(line);
 					i++;
 			    	Matcher matcher = pattern.matcher(line);
-			    	if (bool==true)
+			    /*	if (bool==true)
 			    	{
 					bool=false;
 					//System.out.println("*******************************************************");
 					//return;
-			    	}
+			    	}   */
 			    	while (matcher.find()) 
 			    	{  
 				    bool=true;
