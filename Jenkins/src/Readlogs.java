@@ -25,18 +25,17 @@ public class Readlogs
 				case 1 : System.out.print("Enter a valid job name.");
 				Scanner st=new Scanner(System.in);
 				job_name=st.next();    */
-	//	for(int i=0;job_name[i]!=null;i++)
+		for(i=0;job_name[i]!=null;i++)
 		{
 			System.out.println(job_name[0]);	
 			try
 			{
-				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name+"/lastSuccessful/log"));
+				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[i]+"/lastSuccessful/log"));
 				boolean bool=false;
 				while((line=br.readLine())!=null)
 				{
 			    	Pattern pattern = Pattern.compile("Tests run:"); 
-				System.out.println(line);
-					i++;
+				//System.out.println(line);
 			    	Matcher matcher = pattern.matcher(line);
 			    /*	if (bool==true)
 			    	{
@@ -47,7 +46,7 @@ public class Readlogs
 			    	while (matcher.find()) 
 			    	{  
 				    bool=true;
-				System.out.println("*******************************************************");
+				System.out.println("******************");
 			    	}  
 				}
 				System.out.println("*****");
