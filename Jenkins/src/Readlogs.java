@@ -15,6 +15,7 @@ public class Readlogs
 	{
 		int i=0;
 		String line=null;
+		Boolean bool=false;
 		String job_name[]={"CRE_Job", "Score_Job", "Shipfar_Job", "Shiptrack_Job"};
 	/*	System.out.println("What do you want to do ?");
 		System.out.println("1. Enter job name to read logs.");
