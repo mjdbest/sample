@@ -37,7 +37,7 @@ public class Readlogs
 				while(br.readLine()!=null)
 				{
 			    	Pattern pattern = Pattern.compile("Results"); 
-				//System.out.println(br.readLine());
+				System.out.println(br.readLine());
 				line=br.readLine();
 			    	Matcher matcher = pattern.matcher(br.readLine());
 			    	if (bool==true)
