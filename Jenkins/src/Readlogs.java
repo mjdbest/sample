@@ -19,11 +19,14 @@ public class Readlogs
 			int i;
 			boolean bool=false;
 			String r="xyz";
+			System.out.println(r);
 			while(br.readLine()!=null)
 			{
 			    Pattern pattern = Pattern.compile("Results"); 
 			    r=br.readLine();
+			System.out.println(r);
 			    Matcher matcher = pattern.matcher(br.readLine());
+				System.out.println(r);
 			    while (matcher.find()) 
 			    {  
 			      System.out.println(r);
