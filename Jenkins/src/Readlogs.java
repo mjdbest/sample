@@ -26,37 +26,36 @@ public class Readlogs
 				case 1 : System.out.print("Enter a valid job name.");
 				Scanner st=new Scanner(System.in);
 				job_name=st.next();    */
-		for(i:job_name)
+		for(int i:job_name)
 		{
 			try
-		{
-			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[i]+"/lastSuccessful/log"));
-			int i;
-			boolean bool=false;
-			String r=null;
-			while(br.readLine()!=null)
 			{
-			    Pattern pattern = Pattern.compile("Results"); 
-			    r=br.readLine();
-			    Matcher matcher = pattern.matcher(br.readLine());
-			    if (bool)
-			    {
-			        System.out.println(r);
-				return;
-			    }
-			    while (matcher.find()) 
-			    {  
+				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[i]+"/lastSuccessful/log"));
+				int i;
+				boolean bool=false;
+				String r=null;
+				while(br.readLine()!=null)
+				{
+			    	Pattern pattern = Pattern.compile("Results"); 
+			    	r=br.readLine();
+			    	Matcher matcher = pattern.matcher(br.readLine());
+			    	if (bool)
+			    	{
+			        	System.out.println(r);
+					return;
+			    	}
+			    	while (matcher.find()) 
+			    	{  
 				    bool=true;
-			    }  
+			    	}  
 			}
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
-				break;
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			/*	break;
 			case 2: return;
-			case 3: System.out.println("Enter valid input!");
+			case 3: System.out.println("Enter valid input!");  */
 		}
 	}
 }
