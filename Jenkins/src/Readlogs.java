@@ -27,6 +27,7 @@ public class Readlogs
 				job_name=st.next();    */
 		for(int i=0;job_name[i]!=null;i++)
 		{
+			System.out.println(i);
 			try
 			{
 				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[i]+"/lastSuccessful/log"));
