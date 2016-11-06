@@ -18,17 +18,19 @@ public class Readlogs
 			BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/Shipfar_Job/lastSuccessful/log"));
 			int i;
 			boolean bool=false;
-			String r="xyz";
+			String r=null;
 			while(br.readLine()!=null)
 			{
 			    Pattern pattern = Pattern.compile("Results"); 
-			   r=br.readLine();
+			    r=br.readLine();
 			    Matcher matcher = pattern.matcher(br.readLine());
-				if (bool==true)
-			System.out.println(r);
+			    if (bool)
+			    {
+			        System.out.println(r);
+				return;
+			    }
 			    while (matcher.find()) 
 			    {  
-				System.out.println("+++++++++++");
 				    bool=true;
 			    }  
 			}
