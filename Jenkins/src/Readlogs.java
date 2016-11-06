@@ -27,7 +27,7 @@ public class Readlogs
 				job_name=st.next();    */
 		for(int i=0;job_name[i]!=null;i++)
 		{
-							System.out.println(job_name);	
+			System.out.println(job_name[i]);	
 			System.out.println(i);
 			try
 			{
@@ -42,7 +42,7 @@ public class Readlogs
 			    	if (bool)
 			    	{
 					System.out.println(r);
-					return;
+					continue;
 			    	}
 			    	while (matcher.find()) 
 			    	{  
