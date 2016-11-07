@@ -29,7 +29,7 @@ public class Readlogs
 		for(i=0;i<job_name.length;i++)
 		{
 			bool=false;
-			System.out.println(job_name[5]);	
+			System.out.println(job_name[i]);	
 			try
 			{
 				BufferedReader br=new BufferedReader(new FileReader("/var/lib/jenkins/jobs/"+job_name[i]+"/lastSuccessful/log"));
